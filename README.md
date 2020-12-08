@@ -8,24 +8,32 @@ is close to English
 - Can improve scalability, consistency, and reliability of an IT environment
 
 ## Main parts of Ansible
+
 **ansible.cfg**
 - Holds configuration information
+
 **inventory**
 - holds the inventory of artifacts e.g. list of servers or nodes being managed
 or configured
+
 **variables.yml**
 - holds the variables that are used to replace wildcards in your playbooks to
 make them more reusable
+
 **ec2_prov_playbook.yml**
 - playbook that has list of tasks to provision an EC2 instance
+
 **ec2_term_playbook.yml**
 - playbook that has list of tasks to terminate an EC2 instance
+
 **modules**
 - units of codes used in playbooks to execute commands on remote servers, in a
 key:value pair format
+
 **plays**
 - script/instruction defining a task to be carried out on a server. A collection
 of plays makes up the playbook
+
 **facts**
 - system properties gathered by ansible while executing a playbook on a host
 system. These could include hostname, OS, number and type of CPU cores
